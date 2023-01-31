@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* a {
+    text-decoration: none;
+    color: #451d04;
+
+}
+
+@media (min-width: 992px) {
+    .text-xl-center {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-xl-center {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .col-lg-5 {
+        padding-top: 200px;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px){}
+
+
+* li {
+    list-style: none;
+}
+
+#CC {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+body {
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+Header {
+    background-color: #ffb3b3;
+    padding: 20px 0;
+    border-right-color: #ffffff;
+
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        text-align: center;
+    }
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo a {
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 660px) {
+    .logo a {
+        display: none;
+    }
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    font-family: "Inter", sans-serif;
+    ;
+    font-size: 1.2rem;
+    margin-right: 25px;
+    font-weight: 700;
+}
+
+.bar {
+    display: none;
+}
+
+@media screen and (max-width: 475px) {
+    .bar {
+        display: block;
+    }
+}
+
+nav {
+    padding: absolute;
+    width: 100%;
+
+}
+
+
+:root {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 70px;
+    background: linear-gradient(to bottom, #ffaf65 0%, #ffdcd1 100%)
+}
+
+.hero h2 {
+    font-family: 'Georgia', serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 90px;
+    margin-bottom: 200px;
+    vertical-align: middle;
+    color: var(--color-secondary);
+}
+
+section h2 {
+    position: absolute;
+    top: 25%;
+    /* or any desired top position */
+    left: 25%;
+    /* or any desired left position */
+    transform: translate(-50%, -50%);
+    /* to center the element */
+    padding: 250px 0 300px 0;
+}
+
+button {
+    position: relative;
+    margin-top: 300px;
+    margin-left: 260px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 36px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #37373f;
+    background:white;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    color: #37373f;
+    font-size: 20px;
+    position: absolute;
+    padding-top: 475px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media screen and (max-width: 660px) {
+    p {
+        display: none;
+    }
+}
+
+.imgimg-fluid {
+    float: right;
+}
+
+img {
+    float: right;
+    vertical-align: top;
+    display: flex;
+    align-items: flex-start;
+    padding: 0px 20px 30px 0;
+}
+
+
+
+
+.text-lg-start {
+    text-align: left !important;
+}
+
+
+.hero {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    min-height: 0vh;
+    padding: 100px 0 10px 100px;
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.gy-5 {
+    --bs-gutter-y: 0.5rem;
+}
+
+.section-bg {
+    background-color: #eee;
+    
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+section {
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+
+.text-lg-start {
+    text-align: left !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+:root {
+    --color-default: #212529;
+    --color-primary: #ce1212;
+    --color-secondary: #37373f;
+}
+
+:root {
+    --font-default: 'Helvetica', sans-serif;
+    --font-primary: 'Georgia', serif;
+    --font-secondary: "Inter", sans-serif;
+}

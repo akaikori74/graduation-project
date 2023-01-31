@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+* a {
+    text-decoration: none;
+    color: #451d04;
+}
+
+* li {
+    list-style: none;
+}
+
+body {
+    background-color: #ffdec1;
+    background: rgb(255,231,208);
+background: linear-gradient(0deg, rgba(255,231,208,1) 30%, rgba(255,255,255,1) 75%);
+    /*background: linear-gradient(45deg, rgba(255,206,160,1) 0%, rgba(255,255,255,1) 50%, rgba(255,206,160,1) 100%);*/
+        /*background: linear-gradient(to bottom, #ffffff 40%, #dfa95e 100%)*/
+}
+
+Header {
+    background-color: #ffb3b3;
+    padding: 20px 0;
+    border-right-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 660px) {
+    .logo a {
+        display: none;
+    }
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    margin-right: 25px;
+    font-weight: 700;
+}
+
+.bar {
+    display: none;
+}
+
+@media screen and (max-width: 475px) {
+    .bar {
+        display: block;
+    }
+}
+
+nav {
+    padding: absolute;
+    width: 100%;
+
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 70px;
+    background: linear-gradient(to bottom, #ffaf65 0%, #ffdcd1 100%)
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.head {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: 50px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 30px 0;
+    text-align: center;
+    color: var(--color-secondary);
+    background: linear-gradient(to bottom, #c8bdb5 0%, rgb(250, 250, 250) 10%);
+}
+
+.fw-light {
+    text-shadow: 0px 1px 3px #37373f;
+}
+
+.lead-text-muted {
+    font-family: 'mitr', sans-serif;
+}
+
+.img-container {
+    display: block;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+}
+
+.mySlides img {
+    width: 100%;
+    max-height: 500px;
+    min-height: 10px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #46494c;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(42, 42, 42);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 10px 10px 0;
+    user-select: none;
+    background-color: #d1d1d1;
+    opacity: 0.5;
+}
+
+.next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    font-family: mitr, sans-serif;
+    margin-top: -2.75rem;
+    color: #ffffff;
+    text-shadow: 0px 1px 5px #000000;
+    font-size: 1.5rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*ส่วนของรายละเอียด*/
+.details {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family:  'mitr', sans-serif;
+    
+}
+
+.text-box {
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    width: 63rem;
+    border: 5px solid white;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(255,231,208,1) 88%, rgba(255,255,255,1) 88%);
+   /*border: 5px solid rgb(163, 9, 9);*/
+}
+
+.h11 {
+    margin-left: -1rem;
+    color: #37373f;
+    font-size: 2vmax;
+    background-color: #ffffff ;
+
+}
+
+h1 {
+    color: #37373f;
+}
+
+p {
+    color: #4c4c51;
+    font-size: 1.25rem;
+}
+
+:root {
+    --color-default: #212529;
+    --color-primary: #ce1212;
+    --color-secondary: #37373f;
+}
+
+:root {
+    --font-default: 'Helvetica', sans-serif;
+    --font-primary: 'Georgia', serif;
+    --font-secondary: "Inter", sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+/*ตอนไหนจะแล้วแล้ว*/
