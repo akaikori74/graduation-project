@@ -229,17 +229,20 @@ header {
     width: 63rem;
     border: 5px solid white;
     border-radius: 10px;
-    background: linear-gradient(0deg, rgba(255,231,208,1) 88%, rgba(255,255,255,1) 88%);
+    /*background: linear-gradient(0deg, rgba(255,231,208,1) 88%, rgba(255,255,255,1) 88%);*/
    /*border: 5px solid rgb(163, 9, 9);*/
 }
 
 .h11 {
-    margin-top: -0.5rem;
+    margin-top: -1.2rem;
     margin-bottom: 1rem;
-    margin-left: -1rem;
+    margin-left: -2rem;
     color: #37373f;
     font-size: 1.5rem;
     background-color: #ffffff ;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    padding-left: 20px;
 
 }
 
@@ -250,6 +253,20 @@ h1 {
 p {
     color: #4c4c51;
     font-size: 1.25rem;
+}
+
+.text-box-2 {
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    width: 63rem;
+    border: 5px solid white;
+    border-radius: 10px;
+    /*background: linear-gradient(0deg, rgba(255,231,208,1) 80px, rgba(255,255,255,1) 80px);*/
+   /*border: 5px solid rgb(163, 9, 9);*/
 }
 
 :root {
