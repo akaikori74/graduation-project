@@ -17,7 +17,7 @@
 body {
     background-color: #ffdec1;
     background: rgb(255,231,208);
-    background: linear-gradient(0deg, rgba(255,231,208,1) 30%, rgba(255,255,255,1) 75%);
+background: linear-gradient(0deg, rgba(255,231,208,1) 52%, rgba(255,255,255,1) 96%);
     /*background: linear-gradient(45deg, rgba(255,206,160,1) 0%, rgba(255,255,255,1) 50%, rgba(255,206,160,1) 100%);*/
         /*background: linear-gradient(to bottom, #ffffff 40%, #dfa95e 100%)*/
 }
@@ -131,7 +131,7 @@ header {
     object-fit: cover;
     position: relative;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #46494c;
+    box-shadow: 5px 5px 10px #606264;
 }
 
 .mySlides {
@@ -168,10 +168,10 @@ header {
 
 .text {
     font-family: mitr, sans-serif;
-    margin-top: -2.75rem;
+    margin-top: -2.5rem;
     color: #ffffff;
     text-shadow: 0px 1px 5px #000000;
-    font-size: 1.5rem;
+    font-size: 1.75vmax;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -230,6 +230,7 @@ header {
     border: 5px solid white;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #b1b5b6;
     /*background: linear-gradient(0deg, rgba(255,231,208,1) 80px, rgba(255,255,255,1) 80px);*/
    /*border: 5px solid rgb(163, 9, 9);*/
 }
@@ -245,6 +246,7 @@ header {
     border: 5px solid white;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #b1b5b6;
     /*background: linear-gradient(0deg, rgba(255,231,208,1) 88%, rgba(255,255,255,1) 88%);*/
    /*border: 5px solid rgb(163, 9, 9);*/
 }
@@ -285,6 +287,7 @@ p {
     border: 5px solid white;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #b1b5b6;
     /*background: linear-gradient(0deg, rgba(255,231,208,1) 88%, rgba(255,255,255,1) 88%);*/
    /*border: 5px solid rgb(163, 9, 9);*/
 }
