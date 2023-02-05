@@ -17,7 +17,7 @@
 body {
     background-color: #ffdec1;
     background: rgb(255,231,208);
-background: linear-gradient(0deg, rgba(255,231,208,1) 30%, rgba(255,255,255,1) 75%);
+    background: linear-gradient(0deg, rgba(255,231,208,1) 30%, rgba(255,255,255,1) 75%);
     /*background: linear-gradient(45deg, rgba(255,206,160,1) 0%, rgba(255,255,255,1) 50%, rgba(255,206,160,1) 100%);*/
         /*background: linear-gradient(to bottom, #ffffff 40%, #dfa95e 100%)*/
 }
@@ -223,7 +223,7 @@ header {
     display: block;
     margin-left: 1rem;
     margin-right: 1rem;
-    padding-top: 0.25rem;
+    padding-top: 1.2rem;
     padding-bottom: 0.5rem;
     padding-left: 2rem;
     width: 63rem;
@@ -234,9 +234,11 @@ header {
 }
 
 .h11 {
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
     margin-left: -1rem;
     color: #37373f;
-    font-size: 2vmax;
+    font-size: 1.5rem;
     background-color: #ffffff ;
 
 }
