@@ -7,7 +7,7 @@
 
 * a {
     text-decoration: none;
-    color: #451d04;
+    color: #4c4c51;
 }
 
 * li {
@@ -35,12 +35,18 @@ Header {
     position: relative;
     width: 90%;
     margin: 0 auto;
+    color: #451d04;
 }
 
 .logo a {
     font-family: var(--font-secondary);
     font-size: 24px;
     font-weight: 700;
+    color: #451d04;
+}
+
+.nav-text{
+    color: #451d04;
 }
 
 @media screen and (max-width: 660px) {
@@ -51,6 +57,7 @@ Header {
 
 nav ul {
     display: flex;
+    
 }
 
 nav ul li {
@@ -58,6 +65,8 @@ nav ul li {
     font-size: 1.2rem;
     margin-right: 25px;
     font-weight: 700;
+    
+    
 }
 
 .bar {
@@ -73,6 +82,7 @@ nav ul li {
 nav {
     padding: absolute;
     width: 100%;
+    color: #451d04;
 
 }
 
@@ -83,6 +93,7 @@ nav {
 header {
     height: 70px;
     background: linear-gradient(to bottom, #ffaf65 0%, #ffdcd1 100%)
+    
 }
 
 .align-items-center {
@@ -240,7 +251,7 @@ header {
     margin-left: 1rem;
     margin-right: 1rem;
     padding-top: 1.2rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     padding-left: 2rem;
     width: 63rem;
     border: 5px solid white;
@@ -251,6 +262,19 @@ header {
    /*border: 5px solid rgb(163, 9, 9);*/
 }
 
+.dd{
+    color: #4c4c5100  ;
+    
+}
+
+.icon{
+    color: #ffffff;
+    font-size: 2rem;
+}
+.icon-2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
 .h11 {
     margin-top: -1.2rem;
     margin-bottom: 1rem;

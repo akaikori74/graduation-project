@@ -129,6 +129,7 @@ header {
     max-width: 600px;
     height: auto;
     transition: 0.5s;
+    border-radius: 5px; 
 }
 
 .about-img:hover {
@@ -148,6 +149,7 @@ header {
     padding: 20px;
     height: 100%;
     line-height: 35px;
+    border-radius: 5px;
 }
 
 .caption {
