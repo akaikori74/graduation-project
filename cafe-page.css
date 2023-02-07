@@ -143,12 +143,12 @@ header {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
+    /*width: auto;*/
     margin-top: -40px;
-    padding: 16px;
+    padding: 1.2vmax;
     color: rgb(42, 42, 42);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     transition: 0.6s ease;
     border-radius: 0 10px 10px 0;
     user-select: none;
