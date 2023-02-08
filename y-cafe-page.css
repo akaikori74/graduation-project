@@ -159,7 +159,7 @@ header {
     padding: 1vmax;
     color: rgb(42, 42, 42);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2vmax;
     transition: 0.6s ease;
     border-radius: 0 10px 10px 0;
     user-select: none;
