@@ -156,10 +156,10 @@ header {
     top: 50%;
     /*width: auto;*/
     margin-top: -40px;
-    padding: 1.2vmax;
+    padding: 1vmax;
     color: rgb(42, 42, 42);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 10px 10px 0;
     user-select: none;
@@ -270,11 +270,14 @@ header {
 .icon{
     color: #ffffff;
     font-size: 2rem;
+    transition: 0.5s;
 }
 .icon-2 {
     color: #ffffff;
     font-size: 2.5rem;
+    transition: 0.5s;
 }
+
 .h11 {
     margin-top: -1.2rem;
     margin-bottom: 1rem;
@@ -339,7 +342,17 @@ p {
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: 0.5s;
 }
+
+.album-img:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+}
+
 :root {
     --color-default: #212529;
     --color-primary: #ce1212;
