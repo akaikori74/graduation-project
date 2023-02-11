@@ -14,36 +14,32 @@
 }
 
 body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #ffffff;
 }
 
 Header {
-    background-color: #ffb3b3;
+    background: linear-gradient(to bottom, #ffaf65 0%, #ffdcd1 100%);
     padding: 20px 0;
-    border-right-color: #ffffff;
+    height: 70px;
+    box-shadow: 0 10px 5px #c8bdb5b9;
+}
+
+.barnav-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
 }
 
 .logo a {
-    font-family: var(--font-secondary);
+    font-family: 'Fredoka One', cursive;
     font-size: 24px;
-    font-weight: 700;
-}
-
-@media screen and (max-width: 660px) {
-    .logo a {
-        display: none;
-    }
+    font-weight: 100;
 }
 
 nav ul {
@@ -51,26 +47,59 @@ nav ul {
 }
 
 nav ul li {
-    font-family: "Inter", sans-serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 1.2rem;
     margin-right: 25px;
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .bar {
     display: none;
 }
 
-@media screen and (max-width: 475px) {
+.fa-bars {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width:700px) {
     .bar {
         display: block;
     }
+
+    nav {
+        position: absolute;
+        max-width: 100%;
+        background: linear-gradient(to bottom, #fdb46f 0%, #ffd5c9 100%);
+        margin-top: 0px;
+        left: -1%;
+        border-radius: 10px;
+        overflow: hidden;
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 2vmax 3.5vw;
+        margin: 0;
+        font-size: 3vw;
+    }
+
+    nav ul li:hover {
+        background-color: #eee;
+    }
+
+    .show {
+        display: flex;
+    }
 }
 
-nav {
-    padding: absolute;
-    width: 100%;
-
+@media screen and (max-width: 470px) {
+    .logo-name {
+        display: none;
+    }
 }
 
 :root {
@@ -129,7 +158,7 @@ header {
     max-width: 600px;
     height: auto;
     transition: 0.5s;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .about-img:hover {
@@ -155,6 +184,11 @@ header {
 .caption {
     text-indent: 40px;
     margin-top: 10px;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.7;
 }
 
 :root {

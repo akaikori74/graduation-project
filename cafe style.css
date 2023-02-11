@@ -14,41 +14,31 @@
 }
 
 body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #ffffff;
 }
 
 Header {
-    background-color: #ffb3b3;
+    background: linear-gradient(to bottom, #ffaf65 0%, #ffdcd1 100%);
     padding: 20px 0;
-    border-right-color: #ffffff;
-    box-shadow: 10px 10px 10px #000000;
-    
+    height: 70px;
+}
+
+.barnav-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    
-    
 }
 
 .logo a {
-    font-family: var(--font-secondary);
+    font-family: 'Fredoka One', cursive;
     font-size: 24px;
-    font-weight: 700;
-    
-}
-
-@media screen and (max-width: 660px) {
-    .logo a {
-        display: none;
-    }
+    font-weight: 100;
 }
 
 nav ul {
@@ -56,32 +46,59 @@ nav ul {
 }
 
 nav ul li {
-    font-family: "Inter", sans-serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 1.2rem;
     margin-right: 25px;
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .bar {
     display: none;
 }
 
-@media screen and (max-width: 475px) {
+.fa-bars {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width:700px) {
     .bar {
         display: block;
     }
+
+    nav {
+        position: absolute;
+        max-width: 100%;
+        background: linear-gradient(to bottom, #fdb46f 0%, #ffd5c9 100%);
+        margin-top: 0px;
+        left: -1%;
+        border-radius: 10px;
+        overflow: hidden;
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 2vmax 3.5vw;
+        margin: 0;
+        font-size: 3vw;
+    }
+
+    nav ul li:hover {
+        background-color: #eee;
+    }
+
+    .show {
+        display: flex;
+    }
 }
 
-nav {
-    padding: absolute;
-    width: 100%;
-
-}
-
-header {
-    height: 70px;
-    background: linear-gradient(to bottom, #ffaf65 0%, #ffdcd1 100%);
-    box-shadow: 10px 10px 10px #000000;
+@media screen and (max-width: 470px) {
+    .logo-name {
+        display: none;
+    }
 }
 
 .align-items-center {
@@ -97,75 +114,83 @@ header {
     padding: 30px 0;
     text-align: center;
     background-color: #eee;
-    color:#37373f;
+    color: #37373f;
     background: linear-gradient(to bottom, #c8bdb5 0%, #eee 10%);
 }
 
 .fw-light {
     text-shadow: 0px 1px 3px #37373f;
 }
-.promocafe{
+
+.promocafe {
     padding-bottom: 20px;
 }
+
 .container-cafe {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6.25rem, 34.375rem)); 
+    grid-template-columns: repeat(auto-fit, minmax(6.25rem, 34.375rem));
     grid-gap: 5px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px #848688;
-    width: 75%;
+    max-width: 75%;
+    gap: -20px;
     padding: 5px 5px 15px 5px;
     margin: 0 auto;
     margin-top: 40px;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'mitr', sans-serif;
 }
-.container-cafe > div {
+
+.container-cafe>div {
     background: #fff;
-}  
+}
 
 @media screen and (max-width: 1490px) {
     .container-cafe {
         align-content: center;
         align-self: start;
     }
-} 
+}
 
 /*ปรับรูป*/
-.container-img{
+.container-img {
     padding: 3.5% 0px 0px 0;
     width: 100%;
     height: 290;
     margin: 0 auto;
 }
-.cafe-img{
+
+.cafe-img {
     margin-left: 3%;
     width: 95%;
     max-height: 300px;
     min-height: 170px;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px #626467;
+    box-shadow: 0 4px 4px #848688;
     object-fit: cover;
 }
 
 /*ปรับข้อความ*/
-.container-name{
+.container-name {
     padding: 3.5% 0px 0px 3%;
     width: 100%;
     margin: 0 auto;
 }
-.cafe-name{
+
+.cafe-name {
     border-radius: 20px;
     font-size: 2rem;
     width: 100%;
     line-height: 2.5rem;
 }
-.caption{
+
+.caption {
     margin-top: 1rem;
     margin-right: 1rem;
     font-size: 1.5rem;
-    font-weight:100;
+    font-weight: 100;
 }
+
 .btn-cafe {
     font-weight: 500;
     font-size: 14px;
@@ -176,8 +201,13 @@ header {
     border-radius: 50px;
     transition: 0.5s;
     color: rgb(64, 64, 64);
-    background:blanchedalmond;
+    background: blanchedalmond;
     box-shadow: 0 4px 4px #c7cacd;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.7;
 }
 
 :root {

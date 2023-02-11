@@ -26,25 +26,22 @@ Header {
     border-right-color: #ffffff;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.barnav-container {
     position: relative;
     width: 90%;
     margin: 0 auto;
 }
 
-.logo a {
-    font-family: var(--font-secondary);
-    font-size: 24px;
-    font-weight: 700;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media screen and (max-width: 660px) {
-    .logo a {
-        display: none;
-    }
+.logo a {
+    font-family: 'Fredoka One', cursive;
+    font-size: 24px;
+    font-weight: 100;
 }
 
 nav ul {
@@ -52,26 +49,59 @@ nav ul {
 }
 
 nav ul li {
-    font-family: "Inter", sans-serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 1.2rem;
     margin-right: 25px;
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .bar {
     display: none;
 }
 
-@media screen and (max-width: 475px) {
+.fa-bars {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width:700px) {
     .bar {
         display: block;
     }
+
+    nav {
+        position: absolute;
+        max-width: 100%;
+        background: linear-gradient(to bottom, #fdb46f 0%, #ffd5c9 100%);
+        margin-top: 0px;
+        left: -1%;
+        border-radius: 10px;
+        overflow: hidden;
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 2vmax 3.5vw;
+        margin: 0;
+        font-size: 3vw;
+    }
+
+    nav ul li:hover {
+        background-color: #eee;
+    }
+
+    .show {
+        display: flex;
+    }
 }
 
-nav {
-    padding: absolute;
-    width: 100%;
-
+@media screen and (max-width: 470px) {
+    .logo-name {
+        display: none;
+    }
 }
 
 :root {
@@ -109,9 +139,11 @@ header {
     justify-content: center;
     flex-wrap: wrap;
 }
-.profile{
+
+.profile {
     border-radius: 10px 10px 0 0;
 }
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -121,7 +153,7 @@ header {
     text-align: center;
     font-family: arial;
     transition: 0.5s;
-    border-radius: 10px     ;
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -137,11 +169,13 @@ header {
     line-height: 1.5;
     font-family: mitr, sans-serif;
 }
-.title1{
+
+.title1 {
     font-size: 1.3rem;
     color: rgb(163, 9, 9);
     margin-bottom: 0.75rem;
 }
+
 .title {
     color: grey;
     font-size: 18px;
@@ -150,7 +184,7 @@ header {
 .fa {
     color: #000000;
     width: 8%;
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
 }
 
 button {

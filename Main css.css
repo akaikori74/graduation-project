@@ -7,67 +7,37 @@
 * a {
     text-decoration: none;
     color: #451d04;
-
 }
-
-@media (min-width: 992px) {
-    .text-xl-center {
-        font-size: 32px;
-    }
-}
-
-@media (min-width: 768px) {
-    .text-xl-center {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .col-lg-5 {
-        padding-top: 200px;
-        align-items: center;
-    }
-}
-
-@media only screen and (max-width: 768px){}
-
 
 * li {
     list-style: none;
 }
 
-#CC {
-    text-align: center;
-    margin-top: 3rem;
-}
-
 body {
-
+    background-image: url(รูป/fix1-blurry-gradient-haikei.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
+/*.sec-main {
+    height: 870px;
+    z-index: -1;
+    background-image: url(รูป/blurry-gradient-haikei.png);
+    background-repeat: no-repeat;
+     background-attachment: fixed;
+    background-size: cover;
+    filter: opacity(70%);
+}*/
+
 Header {
-    background-color: #ffb3b3;
+    background: linear-gradient(to bottom, #ffaf65 0%, #ffdcd1 100%);
     padding: 20px 0;
-    border-right-color: #ffffff;
-
+    height: 70px;
+    box-shadow: 0 10px 5px #c8bdb5b9;
 }
 
-h2 {
-    margin-top: 0;
-    text-align: center;
-    line-height: 1.2;
-}
-
-@media (max-width: 768px) {
-    h2 {
-        text-align: center;
-    }
-}
-
-.container {
+.barnav-container {
     position: relative;
     width: 90%;
     margin: 0 auto;
@@ -77,19 +47,12 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo a {
-    font-family: var(--font-secondary);
+    font-family: 'Fredoka One', cursive;
     font-size: 24px;
-    font-weight: 700;
-}
-
-@media screen and (max-width: 660px) {
-    .logo a {
-        display: none;
-    }
+    font-weight: 100;
 }
 
 nav ul {
@@ -97,165 +60,113 @@ nav ul {
 }
 
 nav ul li {
-    font-family: "Inter", sans-serif;
-    ;
+    font-family: 'Fredoka One', cursive;
     font-size: 1.2rem;
     margin-right: 25px;
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .bar {
     display: none;
 }
 
-@media screen and (max-width: 475px) {
+.fa-bars {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width:700px) {
     .bar {
         display: block;
     }
+
+    nav {
+        position: absolute;
+        max-width: 100%;
+        background: linear-gradient(to bottom, #fdb46f 0%, #ffd5c9 100%);
+        margin-top: 0px;
+        left: -1%;
+        border-radius: 10px;
+        overflow: hidden;
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 2vmax 3.5vw;
+        margin: 0;
+        font-size: 3vw;
+    }
+
+    nav ul li:hover {
+        background-color: #eee;
+    }
+
+    .show {
+        display: flex;
+    }
 }
 
-nav {
-    padding: absolute;
-    width: 100%;
-
-}
-
-
-:root {
-    scroll-behavior: smooth;
-}
-
-header {
-    height: 70px;
-    background: linear-gradient(to bottom, #ffaf65 0%, #ffdcd1 100%)
-}
-
-.hero h2 {
-    font-family: 'Georgia', serif;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 90px;
-    margin-bottom: 200px;
-    vertical-align: middle;
-    color: var(--color-secondary);
-}
-
-section h2 {
-    position: absolute;
-    top: 25%;
-    /* or any desired top position */
-    left: 25%;
-    /* or any desired left position */
-    transform: translate(-50%, -50%);
-    /* to center the element */
-    padding: 250px 0 300px 0;
-}
-
-button {
-    position: relative;
-    margin-top: 300px;
-    margin-left: 260px;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 36px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #37373f;
-    background:white;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
-}
-
-p {
-    font-family: Helvetica, sans-serif;
-    color: #37373f;
-    font-size: 20px;
-    position: absolute;
-    padding-top: 475px;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-@media screen and (max-width: 660px) {
-    p {
+@media screen and (max-width: 470px) {
+    .logo-name {
         display: none;
     }
 }
 
-.imgimg-fluid {
-    float: right;
+button:hover,
+a:hover {
+    opacity: 0.7;
 }
 
-img {
-    float: right;
-    vertical-align: top;
-    display: flex;
-    align-items: flex-start;
-    padding: 0px 20px 30px 0;
-}
-
-
-
-
-.text-lg-start {
-    text-align: left !important;
-}
-
-
-.hero {
+.custom-shape-divider-top-1676050396 {
+    position: absolute;
+    top: 1000;
+    left: 0;
     width: 100%;
-    background-size: cover;
-    position: relative;
-    min-height: 0vh;
-    padding: 100px 0 10px 100px;
-}
-
-.row>* {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: var(--bs-gutter-y);
-}
-
-.gy-5 {
-    --bs-gutter-y: 0.5rem;
-}
-
-.section-bg {
-    background-color: #eee;
-    
-}
-
-.align-items-center {
-    align-items: center !important;
-}
-
-.d-flex {
-    display: flex !important;
-}
-
-section {
-    scroll-margin-top: 90px;
-}
-
-section {
     overflow: hidden;
-    padding: 80px 0;
+    line-height: 0;
+   /* z-index: 1;*/
 }
 
-
-.text-lg-start {
-    text-align: left !important;
+.custom-shape-divider-top-1676050396 svg {
+    position: relative;
+    display: block;
+    width: calc(203% + 1.3px);
+    height: 62px;
 }
 
-.justify-content-between {
-    justify-content: space-between !important;
+.custom-shape-divider-top-1676050396 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.head1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vmax;
+}
+.custom-shape-divider-bottom-1676051664 {
+    position: absolute ;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    /*z-index: 1;*/
+   
+}
+
+.custom-shape-divider-bottom-1676051664 svg {
+    position: relative;
+    display: block;
+    width: calc(203% + 1.3px);
+    height: 62px;
+}
+
+.custom-shape-divider-bottom-1676051664 .shape-fill {
+    fill: #ffffff;
 }
 
 :root {
@@ -268,4 +179,8 @@ section {
     --font-default: 'Helvetica', sans-serif;
     --font-primary: 'Georgia', serif;
     --font-secondary: "Inter", sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
 }
