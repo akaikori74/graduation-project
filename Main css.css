@@ -24,7 +24,7 @@ Header {
     background: linear-gradient(to bottom, #ffaf65 0%, #ffdcd1 100%);
     padding: 20px 0;
     height: 70px;
-    box-shadow: 0 10px 5px #c8bdb5b9;
+    box-shadow: 1px 1px 15px 4px rgba(93, 93, 93, 0.59);
     z-index: 1;
 }
 
@@ -100,7 +100,19 @@ nav ul li {
     }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 430px) {
+    .logo-name {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .logo-name {
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
     .logo-name {
         display: none;
     }
@@ -138,17 +150,27 @@ justify-items: center;
 .head1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 4vmin;
-    background-color: #eee;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(135deg,
+                hsl(0deg 0% 100%) 0%,
+                hsl(22deg 31% 85%) 72%,
+                hsl(26deg 39% 76%) 88%,
+                hsl(33deg 51% 70%) 100%);
     color: #37373f;
     width: 90%;
     padding: 7% 5%;
     margin-top: 2.5%;
     margin-left: 5%;
-    border-radius: 25px 25px 100px;
+    border-radius: 9vmax 25px 100px;
     line-height: 180%;
     min-height: 150px;
     display: flex;
 }
+
+.h11{
+    
+}
+
 h1{
     z-index: 1;
 }
@@ -160,9 +182,18 @@ h1{
     display: flex;
     position: absolute;
     width: 25%;
-    right: 1%;
-    margin-top: -3%;
+    right: 3%;
+    margin-top: -4%;
 }
+
+.c-img {
+    display: flex;
+    position: absolute;
+    width: 25%;
+    right: 20%;
+    margin-top:-10%;
+}
+
 /*.custom-shape-divider-bottom-1676051664 {
     position: absolute ;
     top: 0;

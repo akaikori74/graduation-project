@@ -95,7 +95,19 @@ nav ul li {
     }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 430px) {
+    .logo-name {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .logo-name {
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
     .logo-name {
         display: none;
     }
@@ -148,7 +160,7 @@ nav ul li {
 @media screen and (max-width: 1490px) {
     .container-cafe {
         align-content: center;
-        align-self: start;
+        align-self: center;
     }
 }
 
