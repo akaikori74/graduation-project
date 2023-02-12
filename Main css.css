@@ -231,25 +231,23 @@ h1 span{
 }
 
 .ameame{
-    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.ame{
+.ame1{
     margin-top: 3rem;
-    max-height: 250px;
+    width: 40%;
+}
+.ame2 {
+    margin-top: 3rem;
+    width: 45%;
 }
 
 @media screen and (min-width: 1000px) {
     .ame {
         display: none;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .ame {
-        height: 5%;
-        display: flex;
-        flex-wrap: nowrap;
     }
 }
 /*.custom-shape-divider-bottom-1676051664 {
