@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;400&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        font-family: 'mitr', sans-serif;
+        color: wheat !important;
+        width: 100%;
+    }
+
+    .form-group-btn{
+        display:flex;
+        justify-content: center;
+    
+    }
+
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .pt-5{
+        font-size: 3vmax;
+        color: rgb(163, 9, 9) !important;
+        margin-bottom: 70px;
+    }
+    .login-from{
+        max-width: 700px;
+        min-width: 700px !important;
+        min-height: 700px !important;
+        margin-left: -30%;
+        color: wheat !important;
+    }
+
+    .text-1{
+        font-size: 2.5vmax;
+        color: #37373f !important;
+        margin-bottom: 20px;
+    }
+
+    .text{
+        font-size: 1.5vmax;
+    }
+    @media screen and (max-width: 430px) {
+    .container {
+        max-width: 1000px !important;
+    }
+}
+</style>
+
+<body>
+    <div id="login">
+        <h3 class="text-center text-white pt-5">Login form</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="login-from" action="<?= url ?>" method="post">
+                            <h3 class="text-center text-info text-1">ลงชื่อเข้าเว็บไซต์<br>Chumphuang & Cafe</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info text">ชื่อ สกุล:</label><br>
+                                <input type="text" name="username" id="username" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="status" class="text-info text">สถานะ/อาชีพ: (เช่น นักเรียน, ครู,
+                                    ผู้เข้าชมทั่วไป)</label><br>
+                                <input type="text" name="status" id="status" class="form-control" required>
+                            </div>
+                            <div class="form-group-btn">
+                                <input type="submit" class="btn btn-info btn-md " value="ลงชื่อเข้าสู่ระบบ" id="btn">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("btn").addEventListener('click', save)
+        function save() {
+            var user = document.getElementById("username").value
+            var status = document.getElementById("status").value
+            google.script.run.saveUser(user, status)
+        }
+    </script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
