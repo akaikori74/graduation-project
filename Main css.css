@@ -218,6 +218,7 @@ h1 span{
 .caption{
     font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 1.5vmax;
+        font-weight: 500px;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         background-image: linear-gradient(45deg,
                 hsl(0deg 0% 100%) 0%,
@@ -244,11 +245,11 @@ h1 span{
 
 .ame1{
     margin-top: 3rem;
-    width: 40%;
+    width: 10%;
 }
 .ame2 {
     margin-top: 3rem;
-    width: 45%;
+    width: 15%;
 }
 
 @media screen and (min-width: 1000px) {
