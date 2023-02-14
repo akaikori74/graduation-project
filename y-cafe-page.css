@@ -45,10 +45,19 @@ Header {
     align-items: center;
 }
 
+.icon1 {
+    position: absolute;
+    width: 40px;
+    margin-top: -30px;
+    margin-left: -25PX;
+    padding-top: 20px;
+}
+
 .logo a {
     font-family: 'Fredoka One', cursive;
     font-size: 24px;
     font-weight: 100;
+    padding-left: 20px;
     color: #451d04;
 }
 
@@ -140,6 +149,22 @@ nav ul li {
     background: linear-gradient(to bottom, #c8bdb5 0%, rgb(250, 250, 250) 10%);
 }
 
+@keyframes myAnim0 {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hc {
+    animation: myAnim0 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
+}
+
 .fw-light {
     text-shadow: 0px 1px 3px #37373f;
 }
@@ -155,12 +180,24 @@ nav ul li {
     margin-right: 1rem;
 
 }
+ 
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-
+    animation: myAnim 1s cubic-bezier(0.45, 0, 0.55, 1) 0.5s 1 normal backwards;
 }
 
 .mySlides img {
@@ -270,6 +307,7 @@ nav ul li {
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 5px #b1b5b6;
+    animation: myAnim 1s cubic-bezier(0.45, 0, 0.55, 1) 1s 1 normal backwards;
     /*background: linear-gradient(0deg, rgba(255,231,208,1) 80px, rgba(255,255,255,1) 80px);*/
     /*border: 5px solid rgb(163, 9, 9);*/
 }
@@ -286,6 +324,7 @@ nav ul li {
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 5px #b1b5b6;
+    animation: myAnim 1s cubic-bezier(0.45, 0, 0.55, 1) 1.5s 1 normal backwards;
     /*background: linear-gradient(0deg, rgba(255,231,208,1) 88%, rgba(255,255,255,1) 88%);*/
     /*border: 5px solid rgb(163, 9, 9);*/
 }
@@ -346,6 +385,7 @@ p {
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 5px #b1b5b6;
+    animation: myAnim 1s cubic-bezier(0.45, 0, 0.55, 1) 2s 1 normal backwards;
     /*background: linear-gradient(0deg, rgba(255,231,208,1) 88%, rgba(255,255,255,1) 88%);*/
     /*border: 5px solid rgb(163, 9, 9);*/
 }

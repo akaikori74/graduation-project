@@ -36,10 +36,19 @@ Header {
     align-items: center;
 }
 
+.icon1 {
+    position: absolute;
+    width: 40px;
+    margin-top: -30px;
+    margin-left: -25PX;
+    padding-top: 20px;
+}
+
 .logo a {
     font-family: 'Fredoka One', cursive;
     font-size: 24px;
     font-weight: 100;
+    padding-left: 20px;
 }
 
 nav ul {
@@ -140,6 +149,22 @@ header {
     background: linear-gradient(to bottom, #c8bdb5 0%, #eee 10%);
 }
 
+@keyframes myAnim0 {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hc {
+    animation: myAnim0 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
+}
+
 .fw-light {
     text-shadow: 0px 1px 3px #37373f;
 }
@@ -194,8 +219,57 @@ header {
 }
 
 .caption {
+    font-family: 'Kanit', sans-serif;
     text-indent: 40px;
     margin-top: 10px;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px) rotate(-200deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+.o1 {
+    animation: myAnim 1s ease-out 0.5s 1 normal backwards;
+}
+
+.o3 {
+    animation: myAnim 1s ease-out 1s 1 normal backwards;
+}
+
+.o5 {
+    animation: myAnim 1s ease-out 1.5s 1 normal backwards;
+}
+
+@keyframes myAnim2 {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.o2 {
+    animation: myAnim2 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.5s 1 normal backwards;
+}
+
+.o4 {
+    animation: myAnim2 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 1s 1 normal backwards;
+}
+
+.o6 {
+    animation: myAnim2 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 1.5s 1 normal backwards;
 }
 
 button:hover,

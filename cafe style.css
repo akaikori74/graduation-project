@@ -35,10 +35,19 @@ Header {
     align-items: center;
 }
 
+.icon1 {
+    position: absolute;
+    width: 40px;
+    margin-top: -30px;
+    margin-left: -25PX;
+    padding-top: 20px;
+}
+
 .logo a {
     font-family: 'Fredoka One', cursive;
     font-size: 24px;
     font-weight: 100;
+    padding-left: 20px;
 }
 
 nav ul {
@@ -130,12 +139,56 @@ nav ul li {
     background: linear-gradient(to bottom, #c8bdb5 0%, #eee 10%);
 }
 
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hc{
+    animation: myAnim 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
+}
+
 .fw-light {
     text-shadow: 0px 1px 3px #37373f;
+    z-index: 2;
+}
+
+.gif3 {
+    width: 90%;
+    max-width: 100px;
+    position: absolute;
+    margin-top: -10px;
+    right: 1%;
+}
+
+.gif4 {
+    width: 100px;
+    position: absolute;
+    margin-top: -10px;
+    left: 1%;
 }
 
 .promocafe {
     padding-bottom: 20px;
+}
+
+@keyframes myAnim2 {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .container-cafe {
@@ -144,13 +197,14 @@ nav ul li {
     grid-gap: 5px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px #848688;
-    max-width: 75%;
+    max-width: 70%;
     gap: -20px;
     padding: 5px 5px 15px 5px;
     margin: 0 auto;
     margin-top: 40px;
-    justify-content: space-around;
+    justify-content: center;
     font-family: 'mitr', sans-serif;
+    animation: myAnim2 1s ease-out 0.5s 1 normal backwards;
 }
 
 .container-cafe>div {
@@ -210,6 +264,7 @@ nav ul li {
     display: inline-block;
     padding: 12px 36px;
     margin-top: 2rem;
+    border: 2px solid rgb(64, 64, 64);
     border-radius: 50px;
     transition: 0.5s;
     color: rgb(64, 64, 64);
@@ -217,10 +272,16 @@ nav ul li {
     box-shadow: 0 4px 4px #c7cacd;
 }
 
-button:hover,
+.btn-cafe:hover {
+    transform: translateY(-10px);
+    background-color: rgb(64, 64, 64);
+    color: blanchedalmond;
+}
+
+/*button:hover,
 a:hover {
     opacity: 0.7;
-}
+}*/
 
 :root {
     --color-default: #212529;
