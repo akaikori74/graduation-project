@@ -169,7 +169,7 @@ nav ul li {
 }
 
 .gif4 {
-    width: 100px;
+    max-width: 100px;
     position: absolute;
     margin-top: -10px;
     left: 1%;
@@ -264,7 +264,7 @@ nav ul li {
     display: inline-block;
     padding: 12px 36px;
     margin-top: 2rem;
-    border: 2px solid rgb(64, 64, 64);
+    /*border: 2px solid rgb(64, 64, 64);*/
     border-radius: 50px;
     transition: 0.5s;
     color: rgb(64, 64, 64);
