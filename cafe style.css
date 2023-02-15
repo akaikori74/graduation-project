@@ -35,12 +35,46 @@ Header {
     align-items: center;
 }
 
+@keyframes myAnimi {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
+}
+
 .icon1 {
     position: absolute;
     width: 40px;
     margin-top: -30px;
     margin-left: -25PX;
     padding-top: 20px;
+    animation: myAnimi 5s cubic-bezier(0.45, 0, 0.55, 1) 0s infinite normal forwards;
 }
 
 .logo a {
@@ -137,6 +171,7 @@ nav ul li {
     background-color: #eee;
     color: #37373f;
     background: linear-gradient(to bottom, #c8bdb5 0%, #eee 10%);
+    animation: myAnim 1s cubic-bezier(0.87, 0, 0.13, 1) 0s 1 normal none;
 }
 
 @keyframes myAnim {
@@ -151,8 +186,8 @@ nav ul li {
     }
 }
 
-.hc{
-    animation: myAnim 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
+.hc {
+    animation: myAnim 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.5s 1 normal forwards;
 }
 
 .fw-light {
@@ -166,6 +201,36 @@ nav ul li {
     position: absolute;
     margin-top: -10px;
     right: 1%;
+    z-index: 1;
+}
+
+@keyframes myAnim3 {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
 }
 
 .gif4 {
@@ -173,6 +238,7 @@ nav ul li {
     position: absolute;
     margin-top: -10px;
     left: 1%;
+    animation: myAnim3 4s ease 0s infinite normal forwards;
 }
 
 .promocafe {
@@ -204,7 +270,7 @@ nav ul li {
     margin-top: 40px;
     justify-content: center;
     font-family: 'mitr', sans-serif;
-    animation: myAnim2 1s ease-out 0.5s 1 normal backwards;
+    animation: myAnim2 1s ease-out 1.5s 1 normal backwards;
 }
 
 .container-cafe>div {

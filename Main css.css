@@ -40,12 +40,46 @@ Header {
     align-items: center;
 }
 
+@keyframes myAnimi {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
+}
+
 .icon1{
     position: absolute;
     width: 40px;
     margin-top: -30px;
     margin-left: -25PX;
     padding-top: 20px;
+    animation: myAnimi 5s cubic-bezier(0.45, 0, 0.55, 1) 0s infinite normal forwards;
 }
 
 .logo a {
@@ -186,7 +220,7 @@ a:hover {
     line-height: 180%;
     min-height: 100px;
     display: flex;
-    animation: myAnim 1s cubic-bezier(0.37, 0, 0.63, 1) 0s 1 normal none;
+    animation: myAnim 1s cubic-bezier(0.37, 0, 0.63, 1) 0s 1 normal forwards;
 }
 
 h1 {
@@ -200,6 +234,35 @@ h1 span {
 
 .pos-img {
     width: 50%;
+}
+
+@keyframes myAnim3 {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateY(-30px) rotate(6deg);
+    }
+
+    30% {
+        transform: translateY(15px) rotate(-6deg);
+    }
+
+    45% {
+        transform: translateY(-15px) rotate(3.6deg);
+    }
+
+    60% {
+        transform: translateY(9px) rotate(-2.4deg);
+    }
+
+    75% {
+        transform: translateY(-6px) rotate(1.2deg);
+    }
 }
 
 .p-img {
@@ -282,9 +345,9 @@ h1 span {
 .gif1{
     position: absolute;
     display: flex;
-    width: 15%;
-    margin-top: 25PX;
-    left: -2%;
+    width: 17%;
+    margin-top: 35PX;
+    left: -5.5%;
 }
 
 /*

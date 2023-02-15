@@ -38,12 +38,46 @@ Header {
     align-items: center;
 }
 
+@keyframes myAnimi {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
+}
+
 .icon1 {
     position: absolute;
     width: 40px;
     margin-top: -30px;
     margin-left: -25PX;
     padding-top: 20px;
+    animation: myAnimi 5s cubic-bezier(0.45, 0, 0.55, 1) 0s infinite normal forwards;
 }
 
 .logo a {
@@ -149,6 +183,7 @@ header {
     background-color: #eee;
     color: var(--color-secondary);
     background: linear-gradient(to bottom, #c8bdb5 0%, #eee 10%);
+    animation: myAnim0 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
 }
 
 @keyframes myAnim0 {
@@ -164,7 +199,7 @@ header {
 }
 
 .hc {
-    animation: myAnim0 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
+    animation: myAnim0 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.5s 1 normal forwards;
 }
 
 .fw-light {
@@ -195,6 +230,27 @@ h1{
     font-family: arial;
     transition: 0.5s;
     border-radius: 10px;
+}
+
+.gif1 {
+    position: absolute;
+    width: 150px;
+    margin-left: -120px;
+    margin-top: 300px;
+}
+
+.gif2 {
+    position: absolute;
+    width: 130px;
+    margin-left: -330px;
+    margin-top: -20px;
+}
+
+.gif3 {
+    position: absolute;
+    width: 130px;
+    margin-left: -80px;
+    margin-top: 0px;
 }
 
 .card:hover {
@@ -260,15 +316,15 @@ a:hover {
 }
 
 .c1{
-    animation: myAnim 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.5s 1 normal backwards;
+    animation: myAnim 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 1.5s 1 normal backwards;
 }
 
 .c2 {
-    animation: myAnim 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 1s 1 normal backwards;
+    animation: myAnim 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 2s 1 normal backwards;
 }
 
 .c3 {
-    animation: myAnim 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 1.5s 1 normal backwards;
+    animation: myAnim 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 2.5s 1 normal backwards;
 }
 
 :root {

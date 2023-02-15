@@ -45,12 +45,46 @@ Header {
     align-items: center;
 }
 
+@keyframes myAnimi {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
+}
+
 .icon1 {
     position: absolute;
     width: 40px;
     margin-top: -30px;
     margin-left: -25PX;
     padding-top: 20px;
+    animation: myAnimi 5s cubic-bezier(0.45, 0, 0.55, 1) 0s infinite normal forwards;
 }
 
 .logo a {
@@ -327,6 +361,13 @@ nav ul li {
     animation: myAnim 1s cubic-bezier(0.45, 0, 0.55, 1) 1.5s 1 normal backwards;
     /*background: linear-gradient(0deg, rgba(255,231,208,1) 88%, rgba(255,255,255,1) 88%);*/
     /*border: 5px solid rgb(163, 9, 9);*/
+}
+
+.gif1 {
+    position: absolute;
+    width: 120px;
+    right: 20%;
+    margin-top: 50px;
 }
 
 .dd {
