@@ -101,7 +101,7 @@ nav ul li {
     }
 
     nav ul li {
-        padding: 2vmax 3.5vw;
+        padding: 2.2vmax 3.5vw;
         margin: 0;
         font-size: 3vw;
     }
@@ -115,13 +115,13 @@ nav ul li {
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 440px) {
     .logo-name {
         font-size: 20px !important;
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 380px) {
     .logo-name {
         font-size: 15px !important;
     }
