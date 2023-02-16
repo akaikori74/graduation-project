@@ -14,7 +14,9 @@
 }
 
 body {
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    background: rgb(201, 187, 180);
+        background: linear-gradient(90deg, rgba(201, 187, 180, 0.75) 0%, rgba(255, 255, 255, 1) 20%, rgba(253, 252, 252, 1) 80%, rgba(201, 187, 180, 0.75) 100%);
 }
 
 Header {
@@ -258,6 +260,7 @@ nav ul li {
 }
 
 .container-cafe {
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6.25rem, 34.375rem));
     grid-gap: 5px;
@@ -327,21 +330,49 @@ nav ul li {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 1px;
-    display: inline-block;
     padding: 12px 36px;
-    margin-top: 2rem;
-    /*border: 2px solid rgb(64, 64, 64);*/
     border-radius: 50px;
     transition: 0.5s;
     color: rgb(64, 64, 64);
     background: blanchedalmond;
     box-shadow: 0 4px 4px #c7cacd;
+    display: flex;
+    width: fit-content;
+    margin-top: 50px;
 }
 
 .btn-cafe:hover {
     transform: translateY(-10px);
     background-color: rgb(64, 64, 64);
     color: blanchedalmond;
+}
+
+.UP {
+    font-size: 1.5vmax;
+    padding: 5px;
+    font-family: 'mitr', sans-serif;
+    margin: auto;
+    max-width: 220px;
+    height: 1fr;
+    margin-top: 2rem;
+    margin-bottom: -20px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    background: linear-gradient(to top, #fdb46f 0%, #ffd5c9 100%);
+    transition: 0.5s;
+}
+.UPP{
+    color: rgb(64, 64, 64);
+    transition: 0.5s;
+}
+
+.UP:hover {
+    transform: scale(1.2);
+}
+
+.UPP:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
 }
 
 /*button:hover,
